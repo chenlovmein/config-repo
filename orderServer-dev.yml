@@ -1,7 +1,5 @@
 #spring 相关配置
 spring:
-  application:
-    name: orderServer
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/imoocspringcloud?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false
     username: root
@@ -16,17 +14,3 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
-
-#eureka 配置
-eureka:
-  client:
-    service-url:
-      defaultZone: http://peer1:8002/eureka/,http://peer2:8003/eureka/
-  instance:
-    prefer-ip-address: true
-
-#server 配置
-server:
-  port: 8084
-  servlet:
-    path: /
