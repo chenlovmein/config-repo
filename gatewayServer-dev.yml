@@ -6,6 +6,10 @@ zuul:
       path: /product/**
       serviceId: productServer
       sensitiveHeaders:
+    userServer:
+      path: /user/**
+      serviceId: userServer
+      sensitiveHeaders:
     orderServer:
       path: /order/**
       serviceId: orderServer
