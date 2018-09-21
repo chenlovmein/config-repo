@@ -1,1 +1,25 @@
-serverName: gatewayServer
+
+##zuul config
+zuul:
+  routes:
+    productServer:
+      path: /product/**
+      serviceId: productServer
+      #sensitiveHeaders:
+    orderServer:
+      path: /order/**
+      serviceId: orderServer
+      sensitiveHeaders:
+  ignored-patterns:
+      - /**/product/listForOrder
+
+##权限配置
+management:
+  security:
+    enable: false
+
+#log日志级别
+logging:
+  level:
+    root: warn
+    com.jlsoft: debug
