@@ -5,7 +5,7 @@ zuul:
     productServer:
       path: /product/**
       serviceId: productServer
-      #sensitiveHeaders:
+      sensitiveHeaders:
     orderServer:
       path: /order/**
       serviceId: orderServer
