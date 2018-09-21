@@ -10,8 +10,8 @@ zuul:
       path: /order/**
       serviceId: orderServer
       sensitiveHeaders:
-  ignored-patterns:
-      - /**/product/listForOrder
+  #ignored-patterns:
+      #- /**/product/listForOrder
 
 ##权限配置
 management:
