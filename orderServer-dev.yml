@@ -14,4 +14,4 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
-uname: chenxidong1
+uname: chenxidong0
