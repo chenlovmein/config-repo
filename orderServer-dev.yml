@@ -16,5 +16,5 @@ spring:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
 person:
   name: lily
-  age: 21
+  age: 18
   sex: nv
